@@ -1,0 +1,27 @@
+//Hoja 4.Funciones.Ejercicio3
+#include <iostream>
+#include <conio.h>
+#include <stdio.h>
+
+using namespace std;
+
+void pizza(double *dia, double *extra)
+{
+	*dia = *dia * 1.5 + *extra * 2.5;
+}
+int main()
+{
+	double longitud;
+	double ex;
+	double *dia, *extra;
+
+	dia = &longitud;
+	extra = &ex;
+
+	cout << "Ingrese el diametro de la pizza: "; cin >> longitud;
+	cout << "Ingrese los ingredientes extra: "; cin >> ex;
+	pizza(dia, extra);
+	cout << "El precio total es de: " << longitud;
+
+	_getch();
+}
