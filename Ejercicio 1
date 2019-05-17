@@ -1,0 +1,37 @@
+//Hoja 4.Funciones.Ejercicio1
+#include <iostream>
+#include <conio.h>
+#include <stdio.h>
+
+using namespace std;
+
+void costo(int *num)
+{
+	int costo;
+	if (0 <= *num && *num <= 3)
+	{
+		costo = 145;
+	}
+	if (4 <= *num && *num <= 5)
+	{
+		costo = 138;
+	}
+	if (6 <= *num)
+	{
+		costo = 135;
+	}
+	*num = costo * *num;
+}
+int main()
+{
+	int cantidad;
+	int *num;
+	num = &cantidad;
+
+	cout << "Cantidad de neumaticos a comprar: " << endl;
+	cin >> cantidad;
+	costo(num);
+	cout << "El precio por la compra de los neumaticos fue de: " << cantidad;
+
+	_getch();
+}
