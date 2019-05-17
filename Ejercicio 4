@@ -1,1 +1,28 @@
+//Hoja 4.Funciones.Ejercicio4
+#include <iostream>
+#include <conio.h>
 
+using namespace std;
+
+int semanal(int horas)
+{
+	double salario;
+	if ((horas >= 0) && (horas <= 40))
+	{
+		salario = 16 * horas;
+	}
+	if ((horas > 40))
+	{
+		salario = (16 * 40) + 20 * (horas - 40);
+	}
+	return salario;
+}
+int main()
+{
+	int horas;
+
+	cout << "Cantidad de horas trabajadas: "; cin >> horas;
+	cout << "El salario semanal obtenido es de: " << semanal(horas) << " soles";
+
+	_getch();
+}
