@@ -1,7 +1,6 @@
 //Hoja 4.Funciones.Ejercicio1
 #include <iostream>
 #include <conio.h>
-#include <stdio.h>
 
 using namespace std;
 
