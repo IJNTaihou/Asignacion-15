@@ -1,0 +1,34 @@
+//Hoja 4.Punteros.Ejercicio2
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+void DibujaCuadrado()
+{
+	int numero;
+	char caracter;
+
+	cout << "Ingrese el caracter elegido: ";
+	cin >> caracter;
+	cout << endl;
+
+	cout << "Ingrese el nxn del cuadrado: ";
+	cin >> numero;
+	cout << endl;
+
+	for (int j = 1; j <= numero; j++)
+	{
+		for (int i = 1; i <= numero; i++)
+		{
+			cout << " " << caracter;
+		}
+		cout << endl;
+	}
+}
+
+int main()
+{
+	DibujaCuadrado();
+	_getch();
+}
