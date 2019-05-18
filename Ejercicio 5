@@ -1,1 +1,22 @@
+#include <iostream>
+#include <conio.h>
 
+using namespace std;
+
+double factura(int cantidades, int precioArt)
+{
+	double total;
+
+	total = (cantidades * precioArt)*(118 / 100.00);
+	return total;
+}
+int main()
+{
+	int cantidades, precioArt;
+
+	cout << "Ingrese la cantidad de unidades adquiridas: "; cin >> cantidades;
+	cout << "Precio del articulo: "; cin >> precioArt;
+
+	cout << "Monto total a pagar: " << factura(cantidades, precioArt) << " soles (contado IGV)";
+	_getch();
+}
