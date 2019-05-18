@@ -1,1 +1,49 @@
+//Hoja 4.Funciones.Ejercicio2
+#include <iostream>
+#include <conio.h>
 
+using namespace std;
+
+int agencia(int edad, int genero)
+{
+	int costo;
+	char sexo;
+	sexo = char(genero);
+
+	if ((sexo = 'M') && (edad < 25)) 
+	{ 
+		costo = 1000;
+	}
+	if ((sexo = 'M') && (edad >= 25)) 
+	{ 
+		costo = 700; 
+	}
+	if ((sexo = 'F') && (edad < 21)) 
+	{ 
+		costo = 800; 
+	}
+	if ((sexo = 'F') && (edad >= 21)) 
+	{ 
+		costo = 500;
+	}
+
+	return costo;
+}
+int main()
+{
+	int edad, sexo;
+	char genero;
+
+	cout << "Ingrese la edad de la persona: " << endl;
+	cin >> edad;
+	cout << endl;
+
+	cout << "Ingrese el genero de la persona: " << endl;
+	cin >> sexo;
+	cout << endl;
+
+	genero = int(sexo);
+
+	cout << "Usted pagara un total de: " << agencia(edad, genero);
+	_getch();
+}
