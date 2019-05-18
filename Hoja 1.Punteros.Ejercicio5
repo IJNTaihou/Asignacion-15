@@ -1,0 +1,80 @@
+//Hoja 1.Punteros.Ejercicio5
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+void DibujaCuadrado()
+{
+	for (int j = 1; j < 3; j++)
+	{
+		for (int i = 1; i < 8; i++)
+		{
+			cout << "  ";
+		}
+		for (int i = 1; i < 3; i++)
+		{
+			cout << char(254) << " ";
+		}
+		cout << endl;
+	}
+
+
+	for (int j = 3; j < 5; j++)
+	{
+		for (int i = 1; i < 6; i++)
+		{
+			cout << "  ";
+		}
+		for (int i = 1; i < 7; i++)
+		{
+			cout << char(254) << " ";
+		}
+		cout << endl;
+	}
+
+
+	for (int j = 5; j < 7; j++)
+	{
+		for (int i = 1; i < 4; i++)
+		{
+			cout << "  ";
+		}
+		for (int i = 1; i < 11; i++)
+		{
+			cout << char(254) << " ";
+		}
+		cout << endl;
+	}
+
+	for (int j = 7; j < 9; j++)
+	{
+		for (int i = 1; i < 2; i++)
+		{
+			cout << "  ";
+		}
+		for (int i = 1; i < 15; i++)
+		{
+			cout << char(254) << " ";
+		}
+		cout << endl;
+	}
+
+	for (int j = 7; j < 12; j++)
+	{
+		for (int i = 0; i < 2; i++)
+		{
+			cout << "  ";
+		}
+		for (int i = 0; i < 12; i++)
+		{
+			cout << char(254) << " ";
+		}
+		cout << endl;
+	}
+}
+int main()
+{
+	DibujaCuadrado();
+	_getch();
+}
