@@ -1,1 +1,50 @@
-//Hoja 4.Punteros.Ejercicio3
+//Hoja 1.Punteros.Ejercicio3
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+void DibujaCuadrado()
+{
+	int x;
+	int y;
+	int numero;
+	char caracter;
+
+	cout << "Ingrese el tipo de caracter: ";
+	cin >> caracter;
+	cout << endl;
+
+	cout << "Ingrese el nxn del cuadrado: ";
+	cin >> numero;
+	cout << endl;
+
+	cout << "Punto de inicio de la coordenada X: ";
+	cin >> x;
+	cout << "Punto de inicio de la coordenada Y: ";
+	cin >> y;
+
+
+	for (int j = 1; j <= y; j++)
+	{
+		cout << endl;
+	}
+	for (int j = 1; j <= numero; j++)
+	{
+		for (int i = 1; i <= x; i++)
+		{
+			cout << "  ";
+		}
+		for (int i = 1; i <= numero; i++)
+		{
+			cout << " " << caracter;
+		}
+		cout << endl;
+	}
+}
+
+int main()
+{
+	DibujaCuadrado();
+	_getch();
+}
